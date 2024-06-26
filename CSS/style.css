@@ -1,0 +1,281 @@
+/* *COMMON CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    color: #0b1016;
+    background-color: #cfc91d;
+    padding: 19px 43px;
+    display: inline-block;
+    border: none;
+}
+
+.heading h2{
+    font-weight: 800;
+    color: #02918c;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+.heading p{
+    color: #7e8287;
+    margin: 10px 0;
+}
+.sectionTitle p{
+    color: #7e8287;
+    line-height: 40px;
+}
+
+.sectionTitle p span{
+    font-weight: 800;
+    font-size: 23px;
+}
+
+.card span{
+    color: #02918c;
+    font-size: 30px;
+}
+.card h4{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 25px 0;
+}
+.card p{
+    color: #7e8287;
+    font-size: 11px;
+}
+
+
+
+/* COMMON CSS ENDS/
+
+/* NAVBAR STARTS */
+
+nav {
+    background-color: #02918b;
+}
+
+
+
+nav .logo{
+    width: 30%;
+    
+}
+
+nav .menu{
+    
+    width: 70%;
+    text-align: right;
+}
+
+nav .menu ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav .menu ul li a{
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: inline-block;
+}
+
+
+nav ul li .submenu{
+    position: absolute;
+    border: 1px solid #ccc;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    width: 250px;
+}
+
+nav ul li:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+nav ul li .submenu li{
+    display: block;
+}
+
+nav ul li .submenu li a{
+    color: #222;
+    padding: 10px 18px;
+    display: block;
+    text-align: center;
+    border-bottom:1px solid #ccc ;
+}
+
+
+/* NAVBAR ENDS */
+
+
+/* BANNER STARTS */
+#banner{
+    background-image: url(../images/banner.png);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+#banner .row{
+    height: 100%;
+}
+#banner .banner_cnt{
+    
+    width: 100%;
+}
+#banner .banner_cnt h5{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_cnt h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+
+}
+
+#banner .banner_cnt img{
+    margin: 50px 0;
+}
+
+
+
+
+/* BANNER ENDS */
+
+
+
+/* ABOUT US */
+#about{
+    padding: 98px 0;
+    text-align: center;
+}
+
+#about .aboutCards{
+    margin-top: 80px;
+}
+
+#about .aboutCards .card{
+    width: 25%;
+    border-right: 1px solid red;
+    padding: 35px 0;
+}
+
+#about .aboutCards .card:last-child{
+    border: none;
+}
+
+
+
+/* ABOUT US END */
+
+
+/* WORK STARTS */
+#work .workCard{
+    width: 25%;
+    position: relative;
+    
+}
+
+#work .workCard img{
+    width: 100%;
+    display: block;
+}
+
+#work .workCard .overlay{
+    background-color: rgba(2, 145, 140, 0.85);
+    position: absolute;
+   inset: 20px 28px;
+   text-align: center;
+   color: white;
+   opacity: 0;
+   visibility: hidden;
+   margin-top: 80px;
+   transition: 0.35s;
+}
+
+
+#work .workCard:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+
+/* WORK ENDS */
+
+
+/* CONTACT STARTS */
+#contact{
+    background-color: #0b0b0b;
+    padding: 70px 0;
+    text-align: center;
+}
+
+#contact .formInput{
+    width: 638px;
+    
+    margin: 32px auto;
+}
+
+#contact .formInput input{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+  
+}
+
+
+#contact .formInput:nth-child(1){
+    margin-top: 0;
+}
+#contact .formInput:nth-child(3),
+#contact .formInput:nth-child(4){
+    width: 918px;
+}
+
+/* CONTACT ENDS */
